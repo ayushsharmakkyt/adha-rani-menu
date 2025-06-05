@@ -60,6 +60,13 @@
       color: #ffd700;
       text-shadow: 2px 2px 5px #000;
     }
+	.logo img {
+  	max-width: 320px;  /* इससे लोगो की चौड़ाई बढ़ेगी */
+  	height: auto;
+  	margin: auto;
+  	display: block;
+  	filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.6));
+	}
 
     .tagline {
       font-size: 1.3rem;
@@ -70,24 +77,24 @@
     nav {
       margin-top: 20px;
     }
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+}
 
-    nav ul {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      list-style: none;
-      gap: 10px;
-    }
+nav ul li a {
+  background: #ff69b4;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    nav ul li a {
-      background: #ff69b4;
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 25px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s;
-    }
 
     nav ul li a:hover {
       background: #fff;
@@ -146,7 +153,9 @@
   </div>
 
   <header>
-    <div class="logo">🌸 Radha Rani Sweets & Restaurant 🌸</div>
+	<div class="logo">
+  	<img src="https://i.postimg.cc/zDhC2Wp6/Radha-Rani-Sweets-Restaurant-copy.png" alt="Radha Rani Sweets & Restaurant Logo">
+	</div>
     <div class="tagline">स्वाद, शुद्धता और सेवा का संगम</div>
     <nav>
       <ul>
